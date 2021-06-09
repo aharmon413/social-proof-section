@@ -10,14 +10,44 @@
     --light-grayish-magenta: hsl(300, 24%, 96%);
     --white: hsl(0, 0%, 100%);
 }
-
 * {
     box-sizing: inherit;
     margin: 0;
     padding: 0;
 }
-
 body {
     font-size: 0.9375em; /* 15px */
     font-family: Spartan, sans-serif;
+    text-align: center;
+    background: url(../images/bg-pattern-top-mobile.svg), url(../images/bg-pattern-bottom-mobile.svg);
+    background-repeat: no-repeat;
+}
+h1 {
+    color: var(--very-dark-magenta);
+}
+h2 {
+    color: var(--white);
+}
+footer {
+    color: var(--dark-grayish-magenta);
+}
+.rating {
+    background-color: var(--light-grayish-magenta);
+}
+.rating p {
+    color: var(--very-dark-magenta);
+    font-weight: 700;
+}
+.review {
+    background-color: var(--very-dark-magenta);
+    text-align: left;
+}
+.customer-image {
+    border-radius: 50%;
+}
+.review p {
+    color: var(--white);
+}
+p.verified {
+    color: var(--soft-pink);
 }
