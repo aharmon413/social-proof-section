@@ -20,8 +20,7 @@ body {
     font-family: Spartan, sans-serif;
     text-align: center;
     margin: 4.75em 0;
-    /* note -- somewhere in between mobile and desktop size the background SVGs start to overlap */
-    background: url(../images/bg-pattern-top-mobile.svg), url(../images/bg-pattern-bottom-mobile.svg);
+    background: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
     background-repeat: no-repeat;
     background-position: top, bottom;
     background-size: 100%;
@@ -57,8 +56,8 @@ footer a {
 footer a:hover, footer a:focus {
     color:hsl(333, 80%, 77%)
 }
-.social-proof {
-    margin: 0 1.25em;
+.star-ratings, .customer-reviews {
+    margin: 5%;
 }
 .rating {
     background-color: var(--light-grayish-magenta);
@@ -102,4 +101,24 @@ footer a:hover, footer a:focus {
 p.verified {
     color: var(--soft-pink);
     font-size: 0.9375em;
+}
+
+@media screen and (min-width: 700px) {
+    body {
+        background-size: 30%;
+    }
+    h1 + p {
+        margin: 1.5em 3em 3em 3em;
+    }
+    .star-ratings, .customer-reviews {
+        margin: 0 15%;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    body {
+        background: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
+        background-repeat: no-repeat;
+        background-position: top left, bottom;
+    }
 }
